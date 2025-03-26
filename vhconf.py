@@ -29,4 +29,3 @@ for section in conf.sections():
     for key in conf[section]:
         locals()[key] = conf.get(section, key)
 
-print(Fore.CYAN + "[CONFIGURATION] : " + Fore.RESET + "configuration read, command prefix is %s" % cmd_prefix)
